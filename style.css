@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -13,19 +13,106 @@
     --dark-green: #A3B104;
 }
 
-.home__header{
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/home/home-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Start Home Style */
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color: #A3B104;
-    padding: 10px 5%;
+    padding: 10px 80px;
 }
 
-.home__nav ul{
-    display: flex;
-    gap: 10px;
+header .header__logo img{
+    width: 70px;
 }
-.home__nav ul li a{
+
+header .header__nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header .header__nav ul li a{
     color: #fff;
 } 
+
+header .header__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header .header__login img{
+    width: 25px;
+}
+
+header .header__login a{
+    color: #fff;
+}
+
+.section__home{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* .section__home .home__content{
+    display: flex;
+    flex-direction: column;
+} */
+
+.section__home .home__content h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.section__home .home__content h1 span{
+    color: #C5D512;
+}
+
+.section__home .home__content p{
+    font-size: 1rem;
+    font-weight:200;
+}
+
+.section__home .home__content .btn__home{
+    width: 150px;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section__home .home__img img{
+    width: 300px;
+}
+
+.section__home .slide__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section__home .slide__btn img{
+    width: 50px;
+}
+/* End home style */
+
