@@ -235,12 +235,19 @@ footer img {
  
  }
 .sectionser h1{
-    color: #434806;
-    padding: 50px;
+    color: #8B8A3B;
+    padding: 10% 50% 0% 5%;
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: 12%;
+
 }
-.sectionser h4{
-    color: #434806;
-    padding: 40px;
+.sectionser P{
+    color: #8B8A3B;
+    padding: 1% 50% 10% 5%;
+    font-weight: 500px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
 }
 .sectionmidl{
     display: flex;
@@ -251,7 +258,7 @@ footer img {
 .firstpic{
     width: 400px;
     height: 200px;
-    margin-left: 10px;
+    margin-left: 20px;
    
 }
 .sectionmidl2{
@@ -262,8 +269,8 @@ footer img {
 }
 .secondimg{
     width: 400px;
-    height: 200px;
-    margin-left: 10px;
+    height: 250px;
+    margin-left: 20px;
    
 }
 
@@ -277,15 +284,29 @@ footer img {
     display: flex;
     flex-direction: row;
     gap: 2%;
+    justify-content: space-between;
+    margin: 0% 6%;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+   
 }
  .icon{
-    margin-left: 0px;
-    margin-top: 200px;
-    margin-top: 100px;
- }
- .card{
-    margin-right: 200px;
-    margin-left: 150px;
+   height: 90px;
+  margin-top: 90PX;
    
  }
+ .card{
+    margin: 90px 10% 10% 5%;
+    
+   
+ }
+ .card h2{
+    width: 200px;
+    margin-right: 30px;
+    justify-content: space-evenly;
 
+ }
+/* ending of services style*/
