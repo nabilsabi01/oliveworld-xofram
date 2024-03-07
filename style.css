@@ -190,5 +190,27 @@ section.section__about{
 }
 /* End ABOUT US style */
 
+/* Start footer */
+footer{
+    height: 170px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h6{
+    color: #fff;
+}
+footer .media img{
+    width: 50px;
+}
+/* End footer */
 
 
