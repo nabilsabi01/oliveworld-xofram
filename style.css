@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -13,19 +13,122 @@
     --dark-green: #A3B104;
 }
 
-.home__header{
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/home/home-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Start Home Style */
+header{
+    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color: #A3B104;
     padding: 10px 5%;
 }
 
-.home__nav ul{
-    display: flex;
-    gap: 10px;
+header .header__logo img{
+    width: 70px;
 }
-.home__nav ul li a{
+
+header .header__nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header .header__nav ul li a{
     color: #fff;
 } 
+
+header .header__nav ul li a:hover{
+    background-color: var(--light-green);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header .header__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header .header__login img{
+    width: 25px;
+}
+
+header .header__login a{
+    color: #fff;
+}
+
+.section__home{
+    width: 100%;
+    height: 85%;
+    padding: 0px 20px 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    gap: 20px;
+}
+
+.section__home .home__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+.section__home .home__content h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section__home .home__content h1 span{
+    color: var(--light-green);
+}
+
+.section__home .home__content p{
+    font-size: 1.3rem;
+    font-weight:300;
+    margin-bottom: 50px;
+}
+
+.section__home .home__content .btn__home a{
+    width: 150px;
+    background-color: var(--dark-green);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight:600;
+    color: white;
+}
+
+.section__home .home__content .btn__home a:hover{
+    background-color: #fff;
+    color: var(--dark-green);
+}
+
+.section__home .home__img img{
+    width: 300px;
+}
+
+.section__home .slide__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section__home .slide__btn img{
+    width: 50px;
+}
+/* End home style */
+
