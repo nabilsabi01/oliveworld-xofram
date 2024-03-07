@@ -11,6 +11,7 @@
 :root{
     --light-green: #C5D512;
     --dark-green: #A3B104;
+    --darker-green: #596005;
 }
 
 /* Start Home Style */
@@ -25,6 +26,9 @@ main{
     background-repeat: no-repeat;
 }
 
+.header__background{
+    background-image: url(./assets/nav.png);
+} 
 header{
     height: 15%;
     display: flex;
@@ -32,6 +36,7 @@ header{
     align-items: center;
     padding: 10px 5%;
 }
+
 
 header .header__logo img{
     width: 70px;
@@ -167,7 +172,6 @@ section.section__about{
 }
 .cercl{
     border-radius: 200%;
-  
    width: 30%;
    height: 40%;
    padding-left: 40%;
@@ -221,5 +225,94 @@ footer img {
     width: 70px;
 }
 /* End footer */
+
+/* Start Products Styling */
+.products__info{
+    height: 70vh;
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products__info h1{
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.products__info p{
+    font-size: 1rem;
+    color: var(--darker-green);
+}
+
+.section__products {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.section__products .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 5%;
+    flex-wrap: wrap;
+}
+
+.section__products h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #34591B;
+}
+.section__products .products .product{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(52, 89, 27, 0.8);
+  }
+
+.section__products .products .product img{
+    width: 150px;
+}
+
+.section__products .products .product h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.section__products .products .product p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.section__products .products .product .btn__buy a{
+    padding: 5px 15px;
+    background-color: var(--light-green);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.section__products .products .product .btn__buy a:hover{
+    color: var(--light-green);
+    background-color: #fff;
+}
+/* End Products Styling */
 
 
