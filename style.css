@@ -192,10 +192,10 @@ section.section__about{
 
 /* Start footer */
 footer{
-    height: 170px;
+    padding: 30px 5%;
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -203,13 +203,19 @@ footer .media{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 }
 
 footer h6{
     color: #fff;
+    font-weight: 300;
+    text-align: center;
 }
 footer .media img{
     width: 50px;
+}
+footer img {
+    width: 70px;
 }
 /* End footer */
 
