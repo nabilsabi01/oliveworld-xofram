@@ -388,3 +388,77 @@ footer img {
 
 /* End Contact Us Style */
 
+/* Start ABOUT US Style*/
+.section__about{
+    background-image: url(./assets/about/background.jpg);
+    background-position: center;
+    background-size: cover;  
+   
+}
+.section__about h1{
+    padding:  10% 50% 0% 5%;
+    font-size: 50px;
+    font-weight: bold ;
+    color: #8A8A3C;
+}
+.section__about p{
+    padding: 1% 50% 10% 5% ;
+    font-weight: 300;
+    color: #8A8A3C;
+}
+.section__about h6{
+    font-weight: 300;
+    color: #8A8A3C;
+}
+#us{
+    text-align: center;
+    color: #383811;
+}
+
+
+.features{
+    padding: 2rem;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.feature:hover{
+    background-color: var(--dark-green);
+    border-radius: 5px;
+}
+.features .feature img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    /* padding-left: 40%;
+    padding-right: 40%; */
+}
+
+
+.statiq{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A430C;
+    color: white;
+    margin-top: 20%;
+}
+.stat{
+    width: 30%;
+    
+}
+
+/* End ABOUT US style */
