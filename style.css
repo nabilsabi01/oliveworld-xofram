@@ -139,4 +139,153 @@ header .header__login a{
 /* End home style */
 
 
+/*ABOUT US*/
+*{
+    
+   margin: 0;
+   padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+  }
+section.section__about{
+    background-image: url(/assets/about/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;  
+}
+#us{
+    text-align: center;
+}
+
+
+.features{
+    display: flex;
+    text-align: center;
+    
+}
+.cercl{
+    border-radius: 200%;
+  
+   width: 30%;
+   height: 40%;
+   padding-left: 40%;
+   padding-right: 40%;
+}
+
+.stat{
+    width: 40%;
+    height: 40%;
+    margin-top: 10%;
+}
+.statiq{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    background-color: #1A430C;
+    color: white;
+    margin-top: 10%;
+}
+.imgs{
+    text-align: center;
+    width: 100px;
+}
+/* End ABOUT US style */
+
+/* Start footer */
+footer{
+    padding: 30px 5%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+footer h6{
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+footer .media img{
+    width: 50px;
+}
+footer img {
+    width: 70px;
+}
+/* End footer */
+
+/* begining of services style*/
+.sectionser{ 
+    background-image: url(./assets/services/oily.jpg);  
+   background-position: center;
+   background-size: cover;
+   text-align: center; 
+   padding: 60px;
+   height: 70vh;
+   width: 100%;
+   
+ 
+ }
+.sectionser h1{
+    color: #434806;
+    padding: 50px;
+}
+.sectionser h4{
+    color: #434806;
+    padding: 40px;
+}
+.sectionmidl{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 60px;
+}
+.firstpic{
+    width: 400px;
+    height: 200px;
+    margin-left: 10px;
+   
+}
+.sectionmidl2{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 60px;
+}
+.secondimg{
+    width: 400px;
+    height: 200px;
+    margin-left: 10px;
+   
+}
+
+ .h3midl h3{
+       display: flex;
+       flex-direction: column;
+       margin-left :500px;
+       margin-bottom: 40px;
+}
+.lastsection{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+ .icon{
+    margin-left: 0px;
+    margin-top: 200px;
+    margin-top: 100px;
+ }
+ .card{
+    margin-right: 200px;
+    margin-left: 150px;
+   
+ }
 
