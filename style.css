@@ -33,6 +33,10 @@ header{
     padding: 10px 5%;
 }
 
+.header__background{
+    background-image: url(./assets/nav.png);
+}
+
 header .header__logo img{
     width: 70px;
 }
@@ -308,5 +312,172 @@ footer img {
     margin-right: 30px;
     justify-content: space-evenly;
 
- }
-/* ending of services style*/
+ /* Start Contact Us Style */
+.contact__home{
+    background-image: url(./assets/contact/back1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.contact__home h1{
+    padding: 11% 50% 0% 6%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #8B8A3B;
+}
+
+.contact__home p{
+    padding: 0% 50% 11% 6%;
+    font-weight: 300px;
+    color: #596005;
+}
+
+.contact__help{
+    color: #596005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 15% 5% -3%;
+
+}
+
+.contact__help img{
+    width: 575px;
+}
+
+.help{
+    padding-left: 40%;
+}
+
+.halp h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0% 0% 10% ;
+}
+
+.choice p{
+    font-size: 20px;
+    margin: 4% 1% ;
+}
+
+.contact__form{
+    color: #596005;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.contact__form .forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact__form .forms .input{
+    border: 1.5px solid  var(--dark-green);
+    margin: 4%;
+    padding: 10% 50% 10% 10%;
+}
+
+.contact__form .input1{
+    border: 1.5px solid  var(--dark-green);
+    margin: 4%;
+    padding: 10% 50% 40% 10%;
+}
+
+.contact__form button{
+    background-color: #A3B104;
+    color: #fff;
+    padding: 5px 30px;
+    border: 1px solid #A3B104;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+
+/* End Contact Us Style */
+
+/* Start ABOUT US Style*/
+.section__about{
+    background-image: url(./assets/about/background.jpg);
+    background-position: center;
+    background-size: cover;  
+   
+}
+.section__about h1{
+    padding:  10% 50% 0% 5%;
+    font-size: 50px;
+    font-weight: bold ;
+    color: #8A8A3C;
+}
+.section__about p{
+    padding: 1% 50% 10% 5% ;
+    font-weight: 300;
+    color: #8A8A3C;
+}
+.section__about h6{
+    font-weight: 300;
+    color: #8A8A3C;
+}
+#us{
+    text-align: center;
+    color: #383811;
+}
+
+
+.features{
+    padding: 2rem;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.feature:hover{
+    background-color: var(--dark-green);
+    border-radius: 5px;
+}
+.features .feature img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    /* padding-left: 40%;
+    padding-right: 40%; */
+}
+
+
+.statiq{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A430C;
+    color: white;
+    margin-top: 20%;
+}
+.stat{
+    width: 30%;
+    
+}
+
+/* End ABOUT US style */
