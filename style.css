@@ -454,24 +454,27 @@ footer img {
 /* End Contact Us Style */
 
 /* Start About Us Style*/
-.sectionabout{
+.section__about{
     background-image: url(./assets/background.jpg);
     background-position: center;
     background-size: cover;
 
 }
-.sectionabout h1{
+
+.section__about h1{
     padding:  10% 50% 0% 5%;
     font-size: 50px;
     font-weight: bold ;
     color: #8A8A3C;
 }
-.sectionabout p{
+
+.section__about p{
     padding: 1% 50% 10% 5% ;
     font-weight: 300;
     color: #8A8A3C;
 }
-.sectionabout h6{
+
+.section__about h6{
     font-weight: 300;
     color: #8A8A3C;
 }
@@ -511,12 +514,12 @@ footer img {
     background-color: rgb(197, 213, 18, 0.4);    ;
     border-radius: 10px;
 }
+
 .features .feature img{
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
 }
-
 
 .statiq{
     text-align: center;
