@@ -11,6 +11,7 @@
 :root{
     --light-green: #C5D512;
     --dark-green: #A3B104;
+    --darker-green: #596005;
 }
 
 /* Start Home Style */
@@ -25,12 +26,19 @@ main{
     background-repeat: no-repeat;
 }
 
+.header__background{
+    background-image: url(./assets/nav.png);
+} 
 header{
     height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
+}
+
+.header__background{
+    background-image: url(./assets/nav.png);
 }
 
 header .header__logo img{
@@ -167,7 +175,6 @@ section.section__about{
 }
 .cercl{
     border-radius: 200%;
-  
    width: 30%;
    height: 40%;
    padding-left: 40%;
@@ -222,4 +229,690 @@ footer img {
 }
 /* End footer */
 
+/* Start Products Styling */
+.products__info{
+    height: 70vh;
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products__info h1{
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.products__info p{
+    font-size: 1rem;
+    color: var(--darker-green);
+}
+
+.section__products {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.section__products .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 5%;
+    flex-wrap: wrap;
+}
+
+.section__products h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #34591B;
+}
+.section__products .products .product{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(52, 89, 27, 0.8);
+  }
+
+.section__products .products .product img{
+    width: 150px;
+}
+
+.section__products .products .product h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.section__products .products .product p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.section__products .products .product .btn__buy a{
+    padding: 5px 15px;
+    background-color: var(--light-green);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.section__products .products .product .btn__buy a:hover{
+    color: var(--light-green);
+    background-color: #fff;
+}
+/* End Products Styling */
+
+/* Start Products Styling */
+.products__info{
+    height: 70vh;
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products__info h1{
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.products__info p{
+    font-size: 1rem;
+    color: var(--darker-green);
+}
+
+.section__products {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.section__products .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 5%;
+    flex-wrap: wrap;
+}
+
+.section__products h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #34591B;
+}
+.section__products .products .product{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(52, 89, 27, 0.8);
+  }
+
+.section__products .products .product img{
+    width: 150px;
+}
+
+.section__products .products .product h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.section__products .products .product p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.section__products .products .product .btn__buy a{
+    padding: 5px 15px;
+    background-color: var(--light-green);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.section__products .products .product .btn__buy a:hover{
+    color: var(--light-green);
+    background-color: #fff;
+}
+/* End Products Styling */
+
+/* begining of services style*/
+.sectionser{ 
+    background-image: url(./assets/services/oily.jpg);  
+   background-position: center;
+   background-size: cover;
+   text-align: center; 
+   padding: 60px;
+   height: 70vh;
+   width: 100%;
+   
+ 
+ }
+.sectionser h1{
+    color: #8B8A3B;
+    padding: 10% 50% 0% 5%;
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: 12%;
+
+}
+.sectionser P{
+    color: #8B8A3B;
+    padding: 1% 50% 10% 5%;
+    font-weight: 500px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+.sectionmidl{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 60px;
+}
+.firstpic{
+    width: 400px;
+    height: 200px;
+    margin-left: 20px;
+   
+}
+.sectionmidl2{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 60px;
+}
+.secondimg{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+   
+}
+
+ .h3midl h3{
+       display: flex;
+       flex-direction: column;
+       margin-left :500px;
+       margin-bottom: 40px;
+}
+.lastsection{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: space-between;
+    margin: 0% 6%;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+   
+}
+ .icon{
+   height: 90px;
+  margin-top: 90PX;
+   
+ }
+ .card{
+    margin: 90px 10% 10% 5%;
+    
+   
+ }
+ .card h2{
+    width: 200px;
+    margin-right: 30px;
+    justify-content: space-evenly;
+
+ /* Start Contact Us Style */
+.contact__home{
+    background-image: url(./assets/contact/back1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.contact__home h1{
+    padding: 11% 50% 0% 6%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #8B8A3B;
+}
+
+.contact__home p{
+    padding: 0% 50% 11% 6%;
+    font-weight: 300px;
+    color: #596005;
+}
+
+.contact__help{
+    color: #596005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 15% 5% -3%;
+
+}
+
+.contact__help img{
+    width: 575px;
+}
+
+.help{
+    padding-left: 40%;
+}
+
+.halp h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0% 0% 10% ;
+}
+
+.choice p{
+    font-size: 20px;
+    margin: 4% 1% ;
+}
+
+.contact__form{
+    color: #596005;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.contact__form .forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact__form .forms .input{
+    border: 1.5px solid  var(--dark-green);
+    margin: 4%;
+    padding: 10% 50% 10% 10%;
+}
+
+.contact__form .input1{
+    border: 1.5px solid  var(--dark-green);
+    margin: 4%;
+    padding: 10% 50% 40% 10%;
+}
+
+.contact__form button{
+    background-color: #A3B104;
+    color: #fff;
+    padding: 5px 30px;
+    border: 1px solid #A3B104;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+
+/* End Contact Us Style */
+
+/* Start ABOUT US Style*/
+.section__about{
+    background-image: url(./assets/about/background.jpg);
+    background-position: center;
+    background-size: cover;  
+   
+}
+.section__about h1{
+    padding:  10% 50% 0% 5%;
+    font-size: 50px;
+    font-weight: bold ;
+    color: #8A8A3C;
+}
+.section__about p{
+    padding: 1% 50% 10% 5% ;
+    font-weight: 300;
+    color: #8A8A3C;
+}
+.section__about h6{
+    font-weight: 300;
+    color: #8A8A3C;
+}
+#us{
+    text-align: center;
+    color: #383811;
+}
+
+
+.features{
+    padding: 2rem;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.feature:hover{
+    background-color: var(--dark-green);
+    border-radius: 5px;
+}
+.features .feature img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    /* padding-left: 40%;
+    padding-right: 40%; */
+}
+
+
+.statiq{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A430C;
+    color: white;
+    margin-top: 20%;
+}
+.stat{
+    width: 30%;
+    
+}
+
+/* End ABOUT US style */
+* begining of services style*/
+.sectionser{ 
+    background-image: url(./assets/services/oily.jpg);  
+   background-position: center;
+   background-size: cover;
+   text-align: center; 
+   padding: 60px;
+   height: 70vh;
+   width: 100%;
+   
+ 
+ }
+.sectionser h1{
+    color: #8B8A3B;
+    padding: 10% 50% 0% 5%;
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: 12%;
+
+}
+.sectionser P{
+    color: #8B8A3B;
+    padding: 1% 50% 10% 5%;
+    font-weight: 500px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+.sectionmidl{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 60px;
+}
+.firstpic{
+    width: 400px;
+    height: 200px;
+    margin-left: 20px;
+   
+}
+.sectionmidl2{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 60px;
+}
+.secondimg{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+   
+}
+
+ .h3midl h3{
+       display: flex;
+       flex-direction: column;
+       margin-left :500px;
+       margin-bottom: 40px;
+}
+.lastsection{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: space-between;
+    margin: 0% 6%;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+   
+}
+ .icon{
+   height: 90px;
+  margin-top: 90PX;
+   
+ }
+ .card{
+    margin: 90px 10% 10% 5%;
+    
+   
+ }
+ .card h2{
+    width: 200px;
+    margin-right: 30px;
+    justify-content: space-evenly;
+
+ /* Start Contact Us Style */
+.contact__home{
+    background-image: url(./assets/contact/back1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.contact__home h1{
+    padding: 11% 50% 0% 6%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #8B8A3B;
+}
+
+.contact__home p{
+    padding: 0% 50% 11% 6%;
+    font-weight: 300px;
+    color: #596005;
+}
+
+.contact__help{
+    color: #596005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 15% 5% -3%;
+
+}
+
+.contact__help img{
+    width: 575px;
+}
+
+.help{
+    padding-left: 40%;
+}
+
+.halp h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0% 0% 10% ;
+}
+
+.choice p{
+    font-size: 20px;
+    margin: 4% 1% ;
+}
+
+.contact__form{
+    color: #596005;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.contact__form .forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact__form .forms .input{
+    border: 1.5px solid  var(--dark-green);
+    margin: 4%;
+    padding: 10% 50% 10% 10%;
+}
+
+.contact__form .input1{
+    border: 1.5px solid  var(--dark-green);
+    margin: 4%;
+    padding: 10% 50% 40% 10%;
+}
+
+.contact__form button{
+    background-color: #A3B104;
+    color: #fff;
+    padding: 5px 30px;
+    border: 1px solid #A3B104;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+
+/* End Contact Us Style */
+
+/* Start ABOUT US Style*/
+.section__about{
+    background-image: url(./assets/about/background.jpg);
+    background-position: center;
+    background-size: cover;  
+   
+}
+.section__about h1{
+    padding:  10% 50% 0% 5%;
+    font-size: 50px;
+    font-weight: bold ;
+    color: #8A8A3C;
+}
+.section__about p{
+    padding: 1% 50% 10% 5% ;
+    font-weight: 300;
+    color: #8A8A3C;
+}
+.section__about h6{
+    font-weight: 300;
+    color: #8A8A3C;
+}
+#us{
+    text-align: center;
+    color: #383811;
+}
+
+
+.features{
+    padding: 2rem;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.feature:hover{
+    background-color: var(--dark-green);
+    border-radius: 5px;
+}
+.features .feature img{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    /* padding-left: 40%;
+    padding-right: 40%; */
+}
+
+
+.statiq{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A430C;
+    color: white;
+    margin-top: 20%;
+}
+.stat{
+    width: 30%;
+    
+}
 
