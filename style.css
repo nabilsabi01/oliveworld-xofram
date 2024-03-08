@@ -14,18 +14,20 @@
     --darker-green: #596005;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+}
 
 /* Start Home Style */
 main{
-    height: 100vh;;
     display: flex;
     flex-direction: column;
-    background-image: url(./assets/home/home-bg.png);
+    background-image: url(../assets/home/home-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 header{
     height: 15%;
@@ -36,7 +38,7 @@ header{
 }
 
 .header__background{
-    background-image: url(./assets/nav.png);
+    background-image: url(../assets/nav.png);
 }
 
 header .header__logo img{
@@ -87,28 +89,28 @@ header .header__login a{
     color: #fff;
 }
 
-.section_home .home_content{
+.section__home .home__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     
 }
-.section_home .home_content h1{
+.section__home .home__content h1{
     font-size: 3rem;
     font-weight: bold;
 }
 
-.section_home .home_content h1 span{
+.section__home .home__content h1 span{
     color: var(--light-green);
 }
 
-.section_home .home_content p{
+.section__home .home__content p{
     font-size: 1.3rem;
     font-weight:300;
 }
 
-.section_home .homecontent .btn_home{
+.section__home .home__content .btn_home{
     margin-top: 30px;
 }
 
@@ -122,16 +124,16 @@ header .header__login a{
     color: white;
 }
 
-.section_home .homecontent .btn_home a:hover{
+.section__home .homecontent .btn_home a:hover{
     background-color: #fff;
     color: var(--dark-green);
 }
 
-.section_home .home_img img{
+.section__home .home_img img{
     width: 300px;
 }
 
-.section_home .slide_btn{
+.section__home .slide_btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +141,7 @@ header .header__login a{
     gap: 20px;
 }
 
-.section_home .slide_btn img{
+.section__home .slide_btn img{
     width: 50px;
 }
 /* End home style */
@@ -182,7 +184,7 @@ footer img {
     padding: 0px 80px;
     justify-content: center;
     flex-direction: column;
-    background-image: url(./assets/background.jpg);
+    background-image: url(../assets/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,6 +209,7 @@ footer img {
     flex-direction: column;
     gap: 30px;
 }
+
 .section__products .products{
     display: flex;
     justify-content: center;
@@ -221,6 +224,7 @@ footer img {
     font-size: 3rem;
     color: #34591B;
 }
+
 .section__products .products .product{
     width: 220px;
     display: flex;
@@ -266,29 +270,26 @@ footer img {
 
 /* begining of services style*/
 .sectionser{ 
-    background-image: url(./assets/services/oily.jpg);  
-   background-position: center;
-   background-size: cover;
-   height: 70vh;
-   width: 100%;
-   
- 
- }
+    background-image: url(../assets/services/oily.jpg);  
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
 .sectionser h1{
     color: #8B8A3B;
     padding: 11% 50% 0% 6%;
     font-size: 60px;
     font-weight: bold;
-
-
-
 }
+
 .sectionser P{
     color: #8B8A3B;
     padding: 0% 50% 11% 6%;
     font-weight: 300px;
     font-size: larger;
 }
+
 .sectionmidl{
     display: flex;
     flex-direction: row;
@@ -296,32 +297,34 @@ footer img {
     gap: 6%;
     margin-top: 60px;
 }
+
 .firstpic{
     width: 400px;
     height: 200px;
-    margin-left: 20px;
-   
+    margin-left: 20px; 
 }
+
 .sectionmidl2{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6%;
 }
+
 .secondimg{
     width: 400px;
     height: 250px;
-    margin-left: 20px;
-   
+    margin-left: 20px;  
 }
 
- .h3midl h3{
-       display: flex;
-       flex-direction: column;
-       margin-left :500px;
-       margin-bottom: 20px;
-       margin-top: 20px;
+.h3midl h3{
+    display: flex;
+    flex-direction: column;
+    margin-left :500px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
 .lastsection{
     display: flex;
     flex-direction: row;
@@ -329,56 +332,61 @@ footer img {
     justify-content: space-between;
     margin: 0% 6%;
 }
+
 .cards{
     display: flex;
     flex-direction: row;
-    gap:20px;
-   
+    gap:20px;  
 }
+
 .card h2:hover{
     font-size: 130%;
     color: #bbc646;
 }
- .icon{
-   height: 50px;
-   margin-top: 90PX;
- }
- .icon:hover{
+
+.icon{
+    height: 50px;
+    margin-top: 90px;
+}
+
+.icon:hover{
     width: 60px;
     height: 60px;
- }
- .card{
+}
+
+.card{
     margin: 70px 5% 10% 5%;
- }
- .card h2{
+}
+
+.card h2{
     margin-top: 5%;
     font-size:20px;
     width: 200px;
     margin-right: 100px;
     justify-content: space-evenly;
- }
- .card{
+}
+
+.card{
     margin: 90px 10% 10% 5%;
-    
-   
- }
- .card h2{
+}
+
+.card h2{
     width: 200px;
     margin-right: 30px;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+}
 
- .card p{
+.card p{
     margin-top: 5%;
     font-size:small;
- }
+}
 
   /* Start Contact Us Style */
 .contact__home{
-    background-image: url(./assets/contact/back1.jpg);
+    background-image: url(../assets/contact/back1.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;
-    width: 100%;
 }
 
 .contact__home h1{
@@ -421,7 +429,6 @@ footer img {
     font-size: 40px;
     font-weight: 400;
     margin: 0% 0% 10% ;
-    width: 100%;
 }
 
 .choice p{
@@ -494,11 +501,10 @@ footer img {
 }
 
 .infos{
-    background-image: url(./assets/contact/back2-1.jpg);
+    background-image: url(../assets/contact/back2-1.jpg);
     background-position: center;
     background-size: cover;
     height: 69.5vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 20%;
@@ -533,7 +539,7 @@ footer img {
 
 /* Start About Us Style*/
 .section__about{
-    background-image: url(./assets/background.jpg);
+    background-image: url(../assets/background.jpg);
     background-position: center;
     background-size: cover;
 
