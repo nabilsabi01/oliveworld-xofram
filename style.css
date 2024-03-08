@@ -264,7 +264,7 @@ footer img {
 }
 /* End Products Style*/
 
-/* Start Services Style*/
+/* begining of services style*/
 .sectionser{ 
     background-image: url(./assets/services/oily.jpg);  
    background-position: center;
@@ -371,7 +371,6 @@ footer img {
     margin-top: 5%;
     font-size:small;
  }
- /* End Services Style */
 
   /* Start Contact Us Style */
 .contact__home{
