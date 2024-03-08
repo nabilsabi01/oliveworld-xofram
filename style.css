@@ -21,6 +21,7 @@ body{
 
 /* Start Home Style */
 main{
+    height: 100vh;;
     display: flex;
     flex-direction: column;
     background-image: url(./assets/home/home-bg.png);
@@ -453,34 +454,33 @@ footer img {
 /* End Contact Us Style */
 
 /* Start About Us Style*/
-.section__about{
-    background-image: url(./assets/about/background.jpg);
+.sectionabout{
+    background-image: url(./assets/background.jpg);
     background-position: center;
-    background-size: cover;  
-   
-}
+    background-size: cover;
 
-.section__about h1{
+}
+.sectionabout h1{
     padding:  10% 50% 0% 5%;
     font-size: 50px;
     font-weight: bold ;
     color: #8A8A3C;
 }
-
-.section__about p{
+.sectionabout p{
     padding: 1% 50% 10% 5% ;
     font-weight: 300;
     color: #8A8A3C;
 }
-
-.section__about h6{
+.sectionabout h6{
     font-weight: 300;
     color: #8A8A3C;
 }
-
 #us{
     text-align: center;
     color: #383811;
+}
+.section__features{
+    padding: 20px;
 }
 
 .features{
@@ -489,11 +489,16 @@ footer img {
     text-align: center; 
     justify-content: center;
     gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 5%;
+    flex-wrap: wrap;
 }
 
 .feature{
-    width: 300px;
-    padding: 10px;
+    width: 250px;
+    padding: 20px;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -503,15 +508,15 @@ footer img {
 }
 
 .feature:hover{
-    background-color: var(--dark-green);
-    border-radius: 5px;
+    background-color: rgb(197, 213, 18, 0.4);    ;
+    border-radius: 10px;
 }
-
 .features .feature img{
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
 }
+
 
 .statiq{
     text-align: center;
@@ -519,9 +524,9 @@ footer img {
     flex-direction: row;
     background-color: #1A430C;
     color: white;
-    margin-top: 20%;
+    padding: 20px 5%;
 }
 .stat{
-    width: 30%; 
+    width: 30%;
 }
 /* End About Us Style*/
