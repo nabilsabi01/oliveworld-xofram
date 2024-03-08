@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliveworld</title>
-    <link rel="stylesheet" href="contact_us.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="header__background">
+        <div class="header__logo">
+            <img src="/assets/logo.png" alt="Logo">
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="products.html">OUR PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="header__login">
+            <a href="#">LOGIN</a>
+            <img src="/assets/search.png" alt="Search">
+        </div>
+    </header>
+
     <section class="contact__home">
         <h1>CONTACT US</h1>
         <p>Feel free to send us a mesage, phone or email us directly,<br> we'd love to hear from you!</p>
     </section>
 
     <section class="contact__help">
-        <img src="Picture/Olivenzweig.png" alt="photo">
+        <img src="assets/contact/Olivenzweig.png" alt="photo">
         <div class="halp">
             <h2>How can we help you?</h2>
             <div class="choice">
@@ -30,10 +49,18 @@
     <form class="contact__form">
         <h2>Keep in touch</h2>
         <p>Fill out the form below, and we'll get back to you as soon as possible</p>
-        <input type="name" placeholder="Your Name*">
-        <input type="email" placeholder="Your Email*">
-        <input type="message" placeholder="Your Message*">
+        <div class="forms">
+            <input type="name" placeholder="Your Name*" class="input">
+            <input type="email" placeholder="Your Email*" class="input">
+            <input type="message" placeholder="Your Message*" class="input1">
+        </div>
         <button type="submit">Send</button>
     </form>
+
+    <section class="contact__information">
+        
+    </section>
+
+
 </body>
 </html>
