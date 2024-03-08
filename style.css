@@ -20,7 +20,7 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(/assets/home/home-bg.png);
+    background-image: url(./assets/home/home-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -939,3 +939,4 @@ footer img {
     width: 30%;
     
 }
+/* End ABOUT US Style*/
