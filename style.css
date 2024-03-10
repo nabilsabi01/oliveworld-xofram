@@ -386,31 +386,32 @@ footer img {
     background-image: url(../assets/contact/back1.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 80px;
     height: 70vh;
 }
 
 .contact__home h1{
-    padding: 10% 50% 0% 6%;
     font-size: 60px;
     font-weight: bold;
     color: #8B8A3B;
 }
 
 .contact__home p{
-    padding: 0% 50% 11% 6%;
     font-weight: 300px;
     color: #596005;
 }
 
 .contact__help p a{
-    padding: 0% 100% 30% 6%;
-    font-weight: 300px;
     color: #596005;
     cursor: pointer;
 }
 
 .contact__help p a:hover{
     color: #9eac04;
+    font-size: 16.5px;
 }
 
 .contact__help{
@@ -418,7 +419,7 @@ footer img {
     display: flex;
     gap: 5%;
     align-items: center;
-    margin: 3% 15% 5% -3%;
+    margin: 3% 0% 5% -3%;
 }
 
 .contact__help img{
@@ -468,6 +469,10 @@ footer img {
     height: 80px;
 }
 
+.contact__form .forms .input:hover{
+    width: 105%;
+}
+
 .contact__form .textarea{
     border: 1.8px solid  var(--dark-green);
     border-radius: 5px;
@@ -477,6 +482,10 @@ footer img {
     height: 150px;
     box-sizing: border-box;
     resize: none;
+}
+
+.contact__form .textarea:hover{
+    width: 105%;
 }
 
 .contact__form button{
