@@ -11,15 +11,18 @@
 :root{
     --light-green: #C5D512;
     --dark-green: #A3B104;
+    --darker-green: #34591B;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
 }
 
 /* Start Home Style */
 main{
-    width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url(/assets/home/home-bg.png);
+    background-image: url(./assets/home/home-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,52 +33,67 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    text-align: center;
+    padding: .5rem 5%;
+}
+
+.header__background{
+    background-image: url(./assets/nav.png);
 }
 
 header .header__logo img{
-    width: 70px;
+    width: 4rem;
 }
 
 header .header__nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 header .header__nav ul li{
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
 }
 
 header .header__nav ul li a{
     color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
 } 
 
-header .header__nav ul li:hover{
+header .header__nav ul li a:hover{
+    opacity: 0.8;
+}
+
+#active, #login:hover{
     background-color: var(--light-green);
-    border-radius: 5px;
+    border-radius: .3rem;
 }
 
 header .header__login{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+    text-align: center;    
 }
 
-header .header__login img{
-    width: 25px;
+header .header__login a img{
+    width: 1.5rem;
+    text-align: center;
 }
 
-header .header__login a{
+#login{
     color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
 }
 
 .section__home{
     width: 100%;
     height: 85%;
-    padding: 0px 20px 0px 10%;
+    padding: 0 2rem 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,10 +103,9 @@ header .header__login a{
 .section__home .home__content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    
+    justify-content: center;    
 }
+
 .section__home .home__content h1{
     font-size: 3rem;
     font-weight: bold;
@@ -99,21 +116,23 @@ header .header__login a{
 }
 
 .section__home .home__content p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight:300;
+    color: var(--light-green);
 }
 
 .section__home .home__content .btn__home{
-    margin-top: 30px;
+    margin-top: 3rem;
 }
+
 .section__home .home__content .btn__home a{
-    width: 150px;
     background-color: var(--dark-green);
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: .6rem 1.25rem;
+    border-radius: .3rem;
     text-align: center;
-    font-weight:600;
+    font-weight:500;
     color: white;
+    font-size: 1rem;
 }
 
 .section__home .home__content .btn__home a:hover{
@@ -122,7 +141,7 @@ header .header__login a{
 }
 
 .section__home .home__img img{
-    width: 300px;
+    width: 20rem;
 }
 
 .section__home .slide__btn{
@@ -130,72 +149,17 @@ header .header__login a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
 }
 
-.section__home .slide__btn img{
-    width: 50px;
+.section__home .slide__btn a img{
+    width: 3.5rem;
 }
 /* End home style */
 
-
-/*ABOUT US*/
-*{
-    
-   margin: 0;
-   padding: 0;
-}
-body {
-    height: 100%;
-    width: 100%;
-  }
-section.section__about{
-    background-image: url(/assets/about/background.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;  
-}
-#us{
-    text-align: center;
-}
-
-
-.features{
-    display: flex;
-    text-align: center;
-    
-}
-.cercl{
-    border-radius: 200%;
-  
-   width: 30%;
-   height: 40%;
-   padding-left: 40%;
-   padding-right: 40%;
-}
-
-.stat{
-    width: 40%;
-    height: 40%;
-    margin-top: 10%;
-}
-.statiq{
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    background-color: #1A430C;
-    color: white;
-    margin-top: 10%;
-}
-.imgs{
-    text-align: center;
-    width: 100px;
-}
-/* End ABOUT US style */
-
 /* Start footer */
 footer{
-    padding: 30px 5%;
+    padding: 1.8rem 5%;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -206,46 +170,141 @@ footer .media{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: .5rem;
 }
 
 footer h6{
     color: #fff;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
+    font-size: 1rem;
+    padding-left: 14%;
 }
+
 footer .media img{
-    width: 50px;
+    width: 2.5rem;
 }
+
 footer img {
-    width: 70px;
+    width: 4rem;
 }
 /* End footer */
+
+/* Start Products Styling */
+.products__info{
+    height: 65%;
+    display: flex;
+    padding: 0 5rem;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products__info h1{
+    color: var(--darker-green);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.products__info p{
+    font-size: 1rem;
+    color: var(--darker-green);
+}
+
+.section__products {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section__products .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+
+.section__products h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--darker-green);
+}
+
+.section__products .products .product{
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: .6rem;
+    text-align: center;
+    background: var(--darker-green);
+  }
+
+.section__products .products .product img{
+    width: 10rem;
+}
+
+.section__products .products .product h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.section__products .products .product p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.section__products .products .product .btn__buy a{
+    padding: .3rem 1.2rem;
+    background-color: #598B2C;
+    color: #fff;
+    border-radius: .25rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.section__products .products .product .btn__buy a:hover{
+    color: var(--darker-green);
+    background-color: #fff;
+}
+/* End Products Style*/
 
 /* begining of services style*/
 .sectionser{ 
     background-image: url(./assets/services/oily.jpg);  
-   background-position: center;
-   background-size: cover;
-   height: 70vh;
-   width: 100%;
-   
- 
- }
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 80px;
+    height: 70vh;
+}
+
 .sectionser h1{
-    color: #8B8A3B;
-    padding: 11% 50% 0% 6%;
+    color: #607C2D;
     font-size: 60px;
     font-weight: bold;
-
-
 }
+
 .sectionser P{
-    color: #8B8A3B;
-    padding: 0% 50% 11% 6%;
     font-weight: 300px;
-    font-size: larger;
+    color: #245501;
 }
+
 .sectionmidl{
     display: flex;
     flex-direction: row;
@@ -253,32 +312,34 @@ footer img {
     gap: 6%;
     margin-top: 60px;
 }
+
 .firstpic{
     width: 400px;
     height: 200px;
-    margin-left: 10px;
-   
+    margin-left: 20px; 
 }
+
 .sectionmidl2{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6%;
 }
+
 .secondimg{
     width: 400px;
-    height: 200px;
-    margin-left: 10px;
-   
+    height: 250px;
+    margin-left: 20px;  
 }
 
- .h3midl h3{
-       display: flex;
-       flex-direction: column;
-       margin-left :500px;
-       margin-bottom: 20px;
-       margin-top: 20px;
+.h3midl h3{
+    display: flex;
+    flex-direction: column;
+    margin-left :500px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
 .lastsection{
     display: flex;
     flex-direction: row;
@@ -286,92 +347,115 @@ footer img {
     justify-content: space-between;
     margin: 0% 6%;
 }
+
 .cards{
     display: flex;
     flex-direction: row;
-    gap:20px;
-   
+    gap:20px;  
 }
+
 .card h2:hover{
     font-size: 130%;
     color: #bbc646;
 }
- .icon{
-   height: 50px;
-   margin-top: 90PX;
- }
- .icon:hover{
+
+.icon{
+    height: 50px;
+    margin-top: 90px;
+}
+
+.icon:hover{
     width: 60px;
     height: 60px;
- }
- .card{
+}
+
+.card{
     margin: 70px 5% 10% 5%;
- }
- .card h2{
+}
+
+.card h2{
     margin-top: 5%;
     font-size:20px;
     width: 200px;
     margin-right: 100px;
     justify-content: space-evenly;
- }
+}
 
- .card p{
+.card{
+    margin: 90px 10% 10% 5%;
+}
+
+.card h2{
+    width: 200px;
+    margin-right: 30px;
+    justify-content: space-evenly;
+}
+
+.card p{
     margin-top: 5%;
     font-size:small;
- }
-/*ending of services style*/
- /* Start Contact Us Style */
+}
+
+  /* Start Contact Us Style */
 .contact__home{
     background-image: url(./assets/contact/back1.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 80px;
     height: 70vh;
-    width: 100%;
 }
 
 .contact__home h1{
-    padding: 11% 50% 0% 6%;
     font-size: 60px;
     font-weight: bold;
-    color: #8B8A3B;
+    color: #607C2D;
 }
 
 .contact__home p{
-    padding: 0% 50% 11% 6%;
     font-weight: 300px;
+    color: #245501;
+}
+
+.contact__help p a{
     color: #596005;
+    cursor: pointer;
+}
+
+.contact__help p a:hover{
+    color: #9eac04;
+    font-size: 16.5px;
 }
 
 .contact__help{
-    color: #596005;
     display: flex;
-    justify-content: space-between;
+    gap: 5%;
     align-items: center;
-    margin: 3% 15% 5% -3%;
-
+    margin: 3% 0% 5% -3%;
 }
 
 .contact__help img{
-    width: 575px;
-}
-
-.help{
-    padding-left: 40%;
+    width: 570px;
 }
 
 .halp h2{
+    color: #596005;
     font-size: 40px;
     font-weight: 400;
     margin: 0% 0% 10% ;
 }
 
 .choice p{
-    font-size: 20px;
+    color: #4D4D4D;
+    font-size: 15px;
+    width: 75%;
     margin: 4% 1% ;
+    margin-right: 50%;
 }
 
 .contact__form{
-    color: #596005;
     margin: 0% auto;
     display: flex;
     flex-direction: column;
@@ -379,9 +463,14 @@ footer img {
 }
 
 .contact__form h2{
+    color: #596005;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 1%;
+}
+
+.contact__form p{
+    color: #4D4D4D;
 }
 
 .contact__form .forms{
@@ -392,15 +481,31 @@ footer img {
 }
 
 .contact__form .forms .input{
-    border: 1.5px solid  var(--dark-green);
+    border: 1.8px solid  var(--dark-green);
+    border-radius: 5px;
     margin: 4%;
-    padding: 10% 50% 10% 10%;
+    padding-left: 5%;
+    width: 400px;
+    height: 80px;
 }
 
-.contact__form .input1{
-    border: 1.5px solid  var(--dark-green);
+.contact__form .forms .input:hover{
+    width: 105%;
+}
+
+.contact__form .textarea{
+    border: 1.8px solid  var(--dark-green);
+    border-radius: 5px;
     margin: 4%;
-    padding: 10% 50% 40% 10%;
+    padding: 7%;
+    width: 400px;
+    height: 150px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact__form .textarea:hover{
+    width: 105%;
 }
 
 .contact__form button{
@@ -409,30 +514,78 @@ footer img {
     padding: 5px 30px;
     border: 1px solid #A3B104;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 5%;
+    cursor: pointer;
 }
 
+.contact__form button:hover{
+    background-color:#ffffff;
+    color: #A3B104
+}
+
+.contact__information{
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.infos{
+    background-image: url(./assets/contact/back2-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 69.5vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+}
+
+.infos h2{
+    color: #596005;
+    font-size: 30px;
+    font-weight:400;
+    margin: 5%;
+}
+
+.infos .line{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    width: 50%;
+    margin: 15px;
+    padding-left: 8%;
+}
+
+.line p{
+    color: rgb(103, 102, 102);
+    width: 1000000000%;
+}
+
+.infos .info_icon{
+    width: 18%; 
+}
 /* End Contact Us Style */
 
-/* Start ABOUT US Style*/
+/* Start About Us Style*/
 .section__about{
-    background-image: url(./assets/about/background.jpg);
+    background-image: url(./assets/background.jpg);
     background-position: center;
-    background-size: cover;  
-   
+    background-size: cover;
+
 }
+
 .section__about h1{
     padding:  10% 50% 0% 5%;
     font-size: 50px;
     font-weight: bold ;
     color: #8A8A3C;
 }
+
 .section__about p{
     padding: 1% 50% 10% 5% ;
     font-weight: 300;
     color: #8A8A3C;
 }
+
 .section__about h6{
     font-weight: 300;
     color: #8A8A3C;
@@ -441,7 +594,9 @@ footer img {
     text-align: center;
     color: #383811;
 }
-
+.section__features{
+    padding: 20px;
+}
 
 .features{
     padding: 2rem;
@@ -449,11 +604,16 @@ footer img {
     text-align: center; 
     justify-content: center;
     gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 5%;
+    flex-wrap: wrap;
 }
 
 .feature{
-    width: 300px;
-    padding: 10px;
+    width: 250px;
+    padding: 20px;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -463,17 +623,15 @@ footer img {
 }
 
 .feature:hover{
-    background-color: var(--dark-green);
-    border-radius: 5px;
+    background-color: rgb(197, 213, 18, 0.4);
+    border-radius: 10px;
 }
+
 .features .feature img{
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
-    /* padding-left: 40%;
-    padding-right: 40%; */
 }
-
 
 .statiq{
     text-align: center;
@@ -481,11 +639,9 @@ footer img {
     flex-direction: row;
     background-color: #1A430C;
     color: white;
-    margin-top: 20%;
+    padding: 20px 5%;
 }
 .stat{
     width: 30%;
-    
 }
-
-/* End ABOUT US style */
+/* End About Us Style*/
