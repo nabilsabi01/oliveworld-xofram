@@ -11,7 +11,7 @@
 :root{
     --light-green: #C5D512;
     --dark-green: #A3B104;
-    --darker-green: #596005;
+    --darker-green: #34591B;
 }
 
 body{
@@ -29,9 +29,11 @@ main{
 }
 
 header{
+    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: .5rem 5%;
 }
 
@@ -40,7 +42,7 @@ header{
 }
 
 header .header__logo img{
-    width: 4.3rem;
+    width: 4rem;
 }
 
 header .header__nav ul{
@@ -48,7 +50,6 @@ header .header__nav ul{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    text-align: center;
 }
 
 header .header__nav ul li{
@@ -107,7 +108,7 @@ header .header__login a img{
 
 .section__home .home__content h1{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .section__home .home__content h1 span{
@@ -191,21 +192,21 @@ footer img {
 
 /* Start Products Styling */
 .products__info{
-    height: 70vh;
+    height: 65%;
     display: flex;
-    padding: 0px 80px;
+    padding: 0 5rem;
     justify-content: center;
     flex-direction: column;
-    background-image: url(../assets/background.jpg);
+    background-image: url(./assets/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .products__info h1{
-    color: var(--dark-green);
+    color: var(--darker-green);
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .products__info p{
@@ -214,43 +215,43 @@ footer img {
 }
 
 .section__products {
-    padding: 50px;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5rem;
 }
 
 .section__products .products{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 0px 5%;
+    gap: 1.5rem;
+    padding: 0 5%;
     flex-wrap: wrap;
 }
 
 .section__products h1{
     font-weight: bold;
     font-size: 3rem;
-    color: #34591B;
+    color: var(--darker-green);
 }
 
 .section__products .products .product{
-    width: 220px;
+    width: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25rem;
+    border-radius: .6rem;
     text-align: center;
-    background: rgb(52, 89, 27, 0.8);
+    background: var(--darker-green);
   }
 
 .section__products .products .product img{
-    width: 150px;
+    width: 10rem;
 }
 
 .section__products .products .product h3{
@@ -266,23 +267,23 @@ footer img {
 }
 
 .section__products .products .product .btn__buy a{
-    padding: 5px 15px;
-    background-color: var(--light-green);
+    padding: .3rem 1.2rem;
+    background-color: #598B2C;
     color: #fff;
-    border-radius: 5px;
+    border-radius: .25rem;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .section__products .products .product .btn__buy a:hover{
-    color: var(--light-green);
+    color: var(--darker-green);
     background-color: #fff;
 }
 /* End Products Style*/
 
 /* begining of services style*/
 .sectionser{ 
-    background-image: url(../assets/services/oily.jpg);  
+    background-image: url(./assets/services/oily.jpg);  
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -395,7 +396,7 @@ footer img {
 
   /* Start Contact Us Style */
 .contact__home{
-    background-image: url(../assets/contact/back1.jpg);
+    background-image: url(./assets/contact/back1.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -522,7 +523,7 @@ footer img {
 }
 
 .infos{
-    background-image: url(../assets/contact/back2-1.jpg);
+    background-image: url(./assets/contact/back2-1.jpg);
     background-position: center;
     background-size: cover;
     height: 69.5vh;
@@ -560,7 +561,7 @@ footer img {
 
 /* Start About Us Style*/
 .section__about{
-    background-image: url(../assets/background.jpg);
+    background-image: url(./assets/background.jpg);
     background-position: center;
     background-size: cover;
 
