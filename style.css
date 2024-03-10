@@ -29,7 +29,7 @@ main{
 }
 
 header{
-    height: 15%;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@ header .header__nav ul{
 }
 
 header .header__nav ul li{
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
 }
 
 header .header__nav ul li a{
@@ -91,8 +91,7 @@ header .header__login a img{
 }
 
 .section__home{
-    width: 100%;
-    height: 85%;
+    height: 85vh;
     padding: 0 2rem 0 10%;
     display: flex;
     align-items: center;
@@ -109,6 +108,7 @@ header .header__login a img{
 .section__home .home__content h1{
     font-size: 3rem;
     font-weight: bold;
+    color: #fff;
 }
 
 .section__home .home__content h1 span{
@@ -191,7 +191,10 @@ footer img {
 /* End footer */
 
 /* Start Products Styling */
-.products__info{
+.products__info, 
+.section__about, 
+.sectionser, 
+.contact__home{
     height: 65%;
     display: flex;
     padding: 0 5rem;
@@ -203,13 +206,16 @@ footer img {
     background-size: cover;
 }
 
-.products__info h1{
+h1{
     color: var(--darker-green);
     font-weight: bold;
     font-size: 3rem;
 }
 
-.products__info p{
+.products__info p, 
+.contact__home p, 
+.sectionser p, 
+.section__about p{
     font-size: 1rem;
     color: var(--darker-green);
 }
@@ -230,12 +236,6 @@ footer img {
     gap: 1.5rem;
     padding: 0 5%;
     flex-wrap: wrap;
-}
-
-.section__products h1{
-    font-weight: bold;
-    font-size: 3rem;
-    color: var(--darker-green);
 }
 
 .section__products .products .product{
@@ -259,6 +259,7 @@ footer img {
     font-weight: 500;
     font-size: 1.3rem;
 }
+
 .section__products .products .product p{
     color: #fff;
     font-size: 1rem;
@@ -282,27 +283,6 @@ footer img {
 /* End Products Style*/
 
 /* begining of services style*/
-.sectionser{ 
-    background-image: url(./assets/services/oily.jpg);  
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
-}
-
-.sectionser h1{
-    color: #8B8A3B;
-    padding: 11% 50% 0% 6%;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-.sectionser P{
-    color: #8B8A3B;
-    padding: 0% 50% 11% 6%;
-    font-weight: 300px;
-    font-size: larger;
-}
-
 .sectionmidl{
     display: flex;
     flex-direction: row;
@@ -394,29 +374,7 @@ footer img {
     font-size:small;
 }
 
-  /* Start Contact Us Style */
-.contact__home{
-    background-image: url(./assets/contact/back1.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 80px;
-    height: 70vh;
-}
-
-.contact__home h1{
-    font-size: 60px;
-    font-weight: bold;
-    color: #8B8A3B;
-}
-
-.contact__home p{
-    font-weight: 300px;
-    color: #596005;
-}
-
+/* Start Contact Us Style */
 .contact__help p a{
     color: #596005;
     cursor: pointer;
@@ -428,7 +386,6 @@ footer img {
 }
 
 .contact__help{
-    color: #596005;
     display: flex;
     gap: 5%;
     align-items: center;
@@ -440,12 +397,14 @@ footer img {
 }
 
 .halp h2{
+    color: var(--darker-green);
     font-size: 40px;
     font-weight: 400;
     margin: 0% 0% 10% ;
 }
 
 .choice p{
+    color: #4D4D4D;
     font-size: 15px;
     width: 75%;
     margin: 4% 1% ;
@@ -453,7 +412,6 @@ footer img {
 }
 
 .contact__form{
-    color: #596005;
     margin: 0% auto;
     display: flex;
     flex-direction: column;
@@ -461,9 +419,14 @@ footer img {
 }
 
 .contact__form h2{
+    color: var(--darker-green);
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 1%;
+}
+
+.contact__form p{
+    color: #4D4D4D;
 }
 
 .contact__form .forms{
@@ -533,7 +496,7 @@ footer img {
 }
 
 .infos h2{
-    color: #596005;
+    color: var(--darker-green);
     font-size: 30px;
     font-weight:400;
     margin: 5%;
@@ -550,44 +513,26 @@ footer img {
 
 .line p{
     color: rgb(103, 102, 102);
-    width: 1000000000%;
+    width: 100%;
 }
 
 .infos .info_icon{
     width: 18%; 
 }
-
 /* End Contact Us Style */
 
 /* Start About Us Style*/
-.section__about{
-    background-image: url(./assets/background.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.section__about h1{
-    padding:  10% 50% 0% 5%;
-    font-size: 50px;
-    font-weight: bold ;
-    color: #8A8A3C;
-}
-
-.section__about p{
-    padding: 1% 50% 10% 5% ;
-    font-weight: 300;
-    color: #8A8A3C;
-}
 
 .section__about h6{
     font-weight: 300;
     color: #8A8A3C;
 }
+
 #us{
     text-align: center;
     color: #383811;
 }
+
 .section__features{
     padding: 20px;
 }
@@ -617,7 +562,7 @@ footer img {
 }
 
 .feature:hover{
-    background-color: rgb(197, 213, 18, 0.4);    ;
+    background-color: rgb(197, 213, 18, 0.4);
     border-radius: 10px;
 }
 
