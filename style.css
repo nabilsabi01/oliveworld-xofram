@@ -239,7 +239,7 @@ h1{
 }
 
 .section__products .products .product{
-    width: 16rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -283,53 +283,53 @@ h1{
 /* End Products Style*/
 
 /* begining of services style*/
+
+.container__services{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .sectionmidl{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 6%;
-    margin-top: 60px;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.firstpic{
+.sectionmidl img{
     width: 400px;
     height: 200px;
-    margin-left: 20px; 
+    border-radius: 10px;
 }
 
-.sectionmidl2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 6%;
-}
-
-.secondimg{
-    width: 400px;
-    height: 250px;
-    margin-left: 20px;  
+.sectionmidl p{
+    width: 800px;
 }
 
 .h3midl h3{
-    display: flex;
-    flex-direction: column;
-    margin-left :500px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    text-align: center;
 }
 
 .lastsection{
+    padding: 1.5rem;
     display: flex;
-    flex-direction: row;
-    gap: 2%;
-    justify-content: space-between;
-    margin: 0% 6%;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .cards{
+    width: 360px;
+    height: 140px;
     display: flex;
-    flex-direction: row;
-    gap:20px;  
+    justify-content: start;
+    align-items: start;
+    gap: .6rem;
 }
 
 .card h2:hover{
@@ -339,7 +339,6 @@ h1{
 
 .icon{
     height: 50px;
-    margin-top: 90px;
 }
 
 .icon:hover{
@@ -347,30 +346,12 @@ h1{
     height: 60px;
 }
 
-.card{
-    margin: 70px 5% 10% 5%;
-}
-
 .card h2{
-    margin-top: 5%;
     font-size:20px;
-    width: 200px;
-    margin-right: 100px;
-    justify-content: space-evenly;
 }
 
-.card{
-    margin: 90px 10% 10% 5%;
-}
-
-.card h2{
-    width: 200px;
-    margin-right: 30px;
-    justify-content: space-evenly;
-}
 
 .card p{
-    margin-top: 5%;
     font-size:small;
 }
 
@@ -378,6 +359,7 @@ h1{
 .contact__help p a{
     color: #596005;
     cursor: pointer;
+    
 }
 
 .contact__help p a:hover{
@@ -390,6 +372,8 @@ h1{
     gap: 5%;
     align-items: center;
     margin: 3% 0% 5% -3%;
+    flex-direction: row-reverse;
+    margin-right: 10%;
 }
 
 .contact__help img{
@@ -426,7 +410,7 @@ h1{
 }
 
 .contact__form p{
-    color: #4D4D4D;
+    color: #596005;
 }
 
 .contact__form .forms{
@@ -512,7 +496,7 @@ h1{
 }
 
 .line p{
-    color: rgb(103, 102, 102);
+    color: #596005;
     width: 100%;
 }
 
@@ -525,45 +509,54 @@ h1{
 
 .section__about h6{
     font-weight: 300;
-    color: #8A8A3C;
+    color: #34591B;
 }
 
 #us{
     text-align: center;
-    color: #383811;
+    color: #34591B;
 }
 
 .section__features{
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
 }
 
-.features{
-    padding: 2rem;
+.section__features .features{
     display: flex;
     text-align: center; 
     justify-content: center;
-    gap: 20px;
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 0px 5%;
+    gap: 1.5rem;
+    padding: 0 5%;
     flex-wrap: wrap;
 }
 
 .feature{
-    width: 250px;
-    padding: 20px;
+    width: 15rem;
+    padding: 1.25rem;
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     text-align: center;
 }
 
 .feature:hover{
-    background-color: rgb(197, 213, 18, 0.4);
-    border-radius: 10px;
+    background-color: rgb(197, 213, 18, .5);
+    border-radius: .8rem;
+}
+
+.feature h2{
+    color: var(--darker-green);
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .features .feature img{
@@ -576,7 +569,7 @@ h1{
     text-align: center;
     display: flex;
     flex-direction: row;
-    background-color: #1A430C;
+    background-color: #34591B;
     color: white;
     padding: 20px 5%;
 }
